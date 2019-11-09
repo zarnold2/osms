@@ -1,0 +1,2 @@
+# osms
+OpenShift Microservice
