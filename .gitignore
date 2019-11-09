@@ -1,3 +1,13 @@
+HELP.md
+target/
+!**/src/main/**
+!**/src/test/**
+
+# eclipse files
+.project
+.classpath
+.settings
+
 # Compiled class file
 *.class
 
