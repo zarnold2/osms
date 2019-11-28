@@ -4,8 +4,3 @@ server:
 spring:
   application:
     name: osms
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:9700/eureka/
