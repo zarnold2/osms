@@ -1,7 +1,6 @@
 package com.example.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -12,18 +11,12 @@ import com.example.services.GreetingService;
 public class GreetingController {
   
   @Autowired
-  GreetingService greetingServices;
-  
-  /*
-  static void main(String[] args) {
-		SpringApplication.run(GreetingController.class, args);
-	}
-	*/
+  GreetingService greetingService;
 	
   @GetMapping(value="/")
   public String greeting()
   {
-    return "Hello World from OpenShift";
+    return greetingService.helloWorld();
   }
   
   @GetMapping(value="/{name}")
